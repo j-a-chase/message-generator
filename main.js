@@ -8,8 +8,14 @@
 //Will hold the randomized message
 let message = "";
 
-//Returns a random number between 1 - 10
-const genRandomNumber = () => Math.floor(Math.random()) % 5 + 1;
+//Returns a random number between 1 - 5
+const genRandomNumber = () => {
+
+    num = Math.floor(Math.random() * 5 + 1);
+    console.log(num);
+    return num;
+
+};
 
 const firstMessagePart = num => {
 
